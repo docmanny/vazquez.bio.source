@@ -34,7 +34,7 @@ library(plotly)
 
 ```{r SEER}
 seer <- read_lines(
-  "../../data/other/SEER18_IncidenceByAge_Sex_Race.csv",
+  "../data/other/SEER18_IncidenceByAge_Sex_Race.csv",
   skip=3
   ) %>% 
   head(n=-13) %>% 
@@ -86,7 +86,7 @@ ggplotly(seer.plot)
 
 ```{r}
 million.women <- read_csv(
-  "../../data/other/Height_Cancer_Million_Women_Study_2011.csv",
+  "../data/other/Height_Cancer_Million_Women_Study_2011.csv",
   col_types = list(
     "Height" = col_factor(
       c('<155', '155', '160', '165', '170', '>=175'), 
@@ -120,7 +120,7 @@ ggplotly(million.women.plot)
 
 
 ```{r}
-Abegglen2015 <- read_csv("../../data/other/Abegglenetal2015CancerTable.csv") %>% 
+Abegglen2015 <- read_csv("../data/other/Abegglenetal2015CancerTable.csv") %>% 
   mutate(
     logMassLifeSpan=log10(`Adultmass(Kg)`)+log10(`Maximumlifespan(yrs)`)
     ) 

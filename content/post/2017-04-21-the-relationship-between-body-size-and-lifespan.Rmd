@@ -44,7 +44,7 @@ library(plotly)
 
 ```{r load_data, message=FALSE}
 # Read the data into a dataframe:
-anage <- read_tsv("../../data/other/anage_build14.txt", 
+anage <- read_tsv("../data/other/anage_build14.txt", 
                   col_names = T, 
                   col_types = list(
                     "References" = col_character(),   # Needs to be specified or else its interpreted as <int>
