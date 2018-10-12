@@ -304,13 +304,13 @@ enableGitInfo = true
 
 [[menu.main]]
   name = "RecBlast"
-  url = "www.vazquez.bio/RecBlast.html"
+  url = "https://recblast.vazquez.bio/"
   parent = "repos"
   weight = 1
 
 [[menu.main]]
   name = "PromegaParser"
-  url = "www.vazquez.bio/PromegaParser.html"
+  url = "www.github.com/docmanny/PromegaParser.html"
   parent = "repos"
   weight = 2
 
